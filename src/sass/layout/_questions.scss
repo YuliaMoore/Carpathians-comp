@@ -1,0 +1,222 @@
+.questions {
+  background-repeat: no-repeat;
+  background-image: url(../images/questions/mobile_bg.jpg);
+  height: 632px;
+  padding-top: 116px;
+  padding-left: 32px;
+  padding-bottom: 117px;
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/questions/tablet_bg.jpg);
+    height: 688px;
+    padding-top: 88px;
+    padding-bottom: 88px;
+    padding-left: 145px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-top: 80px;
+    background-image: url(../images/questions/desk_bg.jpg);
+    height: 1074px;
+    padding-top: 244px;
+    padding-left: 333px;
+  }
+}
+.questions-card {
+  border: 1px solid #a3a5a3;
+  background-color: #f7fbfb;
+  align-content: center;
+  text-align: center;
+
+  width: 311px;
+  height: 399px;
+
+  @media screen and (min-width: 768px) {
+    width: 478px;
+    height: 512px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 774px;
+    height: 583px;
+  }
+}
+
+.questions-title {
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-left: 75px;
+  margin-right: 75px;
+  font-size: 20px;
+  line-height: 24.38px;
+  text-align: center;
+  color: #1b1d1b;
+
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+    line-height: 39px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+    margin-left: 115px;
+    width: 247px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 48px;
+    line-height: 58.51px;
+    margin-top: 60px;
+    margin-bottom: 32px;
+    width: 681px;
+    margin-left: 46px;
+  }
+}
+
+.questions-text {
+  font-weight: 400;
+  text-align: center;
+
+  margin-bottom: 44px;
+  color: #202321;
+  margin-left: 34px;
+  font-size: 14px;
+  line-height: 17px;
+  margin-right: 34px;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 22px;
+    width: 374px;
+    margin-left: 46px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 20px;
+    line-height: 24px;
+    width: 502px;
+    margin-left: 135px;
+
+    text-align: center;
+  }
+}
+.questions-form {
+  // margin-left: 20px;
+  // margin-right: 20px;
+  // @media screen and (min-width: 768px) {
+  //   margin-bottom: 28px;
+  //   display: block;
+  //   padding: 0 98px 0 100px;
+  // }
+  @media screen and (min-width: 1440px) {
+    width: 575px;
+    margin-left: 98px;
+  }
+}
+
+.questions-input {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #a3a5a3;
+  background: transparent;
+  padding: 8px;
+  margin-bottom: 28px;
+  color: #202321;
+}
+
+.form-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #f7fbfb;
+  border: 0px;
+  padding: 16px 96px;
+
+  @media screen and (min-width: 768px) {
+    width: 394px;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 16px 151.5px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 24px;
+    line-height: 29px;
+    height: 69px;
+    width: 100%;
+    padding: 20px 210px;
+  }
+}
+
+.questions-form .form-row {
+  display: flex;
+  margin: 32px 0;
+}
+.input-data {
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1440px) {
+  }
+}
+form .form-row .textarea {
+  height: 70px;
+}
+.input-data input,
+.textarea textarea {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+input:focus ~ label,
+textarea:focus ~ label,
+input:valid ~ label,
+textarea:valid ~ label {
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #3498db;
+}
+.textarea textarea {
+  resize: none;
+  padding-top: 10px;
+}
+.input-data label {
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.textarea label {
+  width: 100%;
+  bottom: 40px;
+  background: #fff;
+}
+.input-data .underline {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+.input-data .underline:before {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 100%;
+  background: #3498db;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before {
+  transform: scale(1);
+}

@@ -1,0 +1,107 @@
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  fill: var(--text-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  &:hover,
+  &:focus {
+    fill: rgba(247, 251, 251, 1);
+  }
+}
+
+.mobile-menu {
+  display: flex;
+  position: fixed;
+
+  @media screen and (max-width: 1439px) {
+    flex-direction: column;
+    transform: translateY(-100%);
+    visibility: hidden;
+    opacity: 0;
+
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/mobile-menu/hero_tablet.jpg);
+    // background-color: rgba(32, 35, 33, 0.7);
+    transition: transform cubic-bezier(0.4, 0, 0.2, 1),
+      opacity vcubic-bezier(0.4, 0, 0.2, 1),
+      visibility vcubic-bezier(0.4, 0, 0.2, 1);
+
+    &.is-open {
+      transform: translateY(0);
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.menu-button {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  z-index: 2;
+
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.icon-cross {
+  display: none;
+
+  .icon-menu.is-open & {
+    display: block;
+  }
+}
+
+.icon-menu {
+  .menu-button.is-open & {
+    display: none;
+  }
+}
+
+.mobile-menu__wrap {
+  background-color: rgba(32, 35, 33, 0.7);
+  position: absolute;
+  width: 50%;
+  height: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 374px;
+    padding-top: 184px;
+  }
+}
+.mobile-menu__item {
+  margin-bottom: 40px;
+}
+.mobile-menu__link {
+  color: rgba(247, 251, 251, 1);
+  font-weight: 500;
+  @media screen and (min-width: 768px) {
+    font-family: Montserrat;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: left;
+  }
+}
+
+.mobile-soc-list {
+  display: flex;
+  gap: 32px;
+  margin-left: 82px;
+}

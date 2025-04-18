@@ -1,0 +1,84 @@
+.advantages {
+  background-repeat: no-repeat;
+  background-image: url('../images/advantages/advantages_mobile_bg.jpg');
+  background-position: center top 67px;
+  padding-bottom: 87px;
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/advantages/advantages_tablet.jpg'),
+      url('../images/advantages/advatages2_tablet.jpg');
+    background-position: top 100px left, bottom right;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1440px) {
+    background-image: url('../images/advantages/advantages2.jpg'),
+      url('../images/advantages/advantages1.jpg'),
+      url('../images/advantages/advantages3.jpg');
+
+    background-position: top 140px left, top 223px left 793px,
+      top 222px left 397px;
+    margin-left: 135px;
+    margin-right: 135px;
+  }
+}
+.advantages-list {
+  margin-top: 115px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 62px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-left: 135px;
+  }
+}
+.advatages-title {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 120px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 140px;
+  }
+}
+
+.advantages-item {
+  display: flex;
+  font-family: Montserrat;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #f7fbfb;
+
+  background-color: #5b86a1;
+  align-items: center;
+
+  font-size: 14px;
+  line-height: 17px;
+  height: 40px;
+  margin-bottom: 28px;
+
+  @media screen and (min-width: 768px) {
+    width: 604px;
+    height: 64px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 630px;
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+.star {
+  @media screen and (min-width: 768px) {
+    margin: 12px 12px 12px 44px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-right: 19px;
+    margin-left: 133px;
+    margin-top: 19px;
+    margin-bottom: 19px;
+  }
+}

@@ -1,0 +1,117 @@
+.footer {
+  background-color: #202321;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #f7fbfb;
+
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1440px) {
+  }
+}
+.footer-wrap {
+  margin-left: 44px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer-title {
+  padding-top: 40px;
+  font-weight: 400;
+
+  letter-spacing: 0em;
+  text-align: center;
+  color: #f7fbfb;
+
+  font-size: 28px;
+  line-height: 34px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+    line-height: 39px;
+    margin-left: 114px;
+    margin-right: 137px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 60px;
+    line-height: 73px;
+    margin-left: 198px;
+    margin-right: 128px;
+  }
+}
+
+.footer-text {
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.86px;
+  padding-bottom: 40px;
+
+  letter-spacing: 0em;
+  text-align: center;
+  color: #a3a5a3;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 63px;
+    line-height: 22px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-bottom: 48px;
+  }
+}
+.footer-list {
+  text-align: left;
+}
+
+.footer-item {
+  font-family: Montserrat;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #f7fbfb;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+// .footer-icons {
+//   @media screen and (min-width: 768px) {
+//     width: 32px;
+//     height: 32px;
+//   }
+// }
+.footer-soc-list {
+  display: flex;
+  gap: 32px;
+}
+.footer-soc-links {
+  color: #f7fbfb;
+}
+
+.footer-list-item {
+  margin-bottom: 26px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+}
+.footer-list-item:last-child {
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 64px;
+  }
+}
