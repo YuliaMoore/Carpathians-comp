@@ -1,0 +1,46 @@
+<div class="backdrop is-hidden" data-modal="modal1">
+  <div class="modal">
+    <button data-modal-close="modal1" class="btn-close">
+      <svg class="icon-close" width="40" height="40">
+        <use href="./images/sprite.svg#icon-x"></use>
+      </svg>
+    </button>
+    <h2 class="modal-title">Book a tour</h2>
+    <p class="modal-text">
+      You can leave your application here and our manager will call you within
+      10 minutes
+    </p>
+    <form class="modal-form">
+      <input
+        type="text"
+        name="name"
+        placeholder="Your name*"
+        class="modal-input"
+      />
+      <input
+        type="phone"
+        name="phone"
+        placeholder="Phone number*"
+        class="modal-input"
+      />
+      <label class="modal-tours-check">
+        <input
+          type="checkbox"
+          name="tour"
+          value="Ascent to Hoverla"
+          class="checkbox-input"
+        />
+        Ascent to Hoverla </label
+      ><br />
+      <label class="modal-tours-check">
+        <input type="checkbox" name="tour" value="Ski tour to Bukovel" />
+        Ski tour to Bukovel </label
+      ><br />
+      <label class="modal-tours-check">
+        <input type="checkbox" name="tour" value="Week in Carpathians" />
+        Week in Carpathians
+      </label>
+      <button type="submit" class="btn modal-submit">CALL ME</button>
+    </form>
+  </div>
+</div>

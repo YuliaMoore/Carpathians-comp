@@ -3,9 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>TOURS TO THE CARPATHIANS FROM LVIV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
   </head>
   <body>
     <include src="./partials/header.html"></include>
@@ -21,5 +35,53 @@
     <include src="./partials/footer.html"></include>
     <include src="./partials/modal.html"></include>
     <include src="./partials/modaltours.html"></include>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiperTours = new Swiper('.mySwiperTours', {
+        navigation: {
+          nextEl: '.tours-button-next',
+          prevEl: '.tours-button-prev',
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          // when window width is >= 768px
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1440: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        navigation: {
+          nextEl: '.gallery-button-next',
+          prevEl: '.gallery-button-prev',
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1.2,
+            spaceBetween: 20,
+          },
+          // when window width is >= 480px
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

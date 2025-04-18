@@ -32,6 +32,10 @@
 .gallery-button-prev,
 .gallery-button-next {
   fill: rgba(91, 134, 161, 1);
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
 }
 
 .gallery-button-prev {
@@ -39,4 +43,22 @@
   @media screen and (min-width: 1440px) {
     margin-left: 60px;
   }
+}
+
+/* Коли кнопка активна */
+.gallery-button-next:not(.swiper-button-disabled),
+.gallery-button-prev:not(.swiper-button-disabled),
+.tours-button-next:not(.swiper-button-disabled),
+.tours-button-prev:not(.swiper-button-disabled) {
+  fill: rgba(91, 134, 161, 1); /* Активна кнопка — синій */
+  cursor: pointer;
+}
+
+/* Коли кнопка неактивна */
+.gallery-button-next.swiper-button-disabled,
+.gallery-button-prev.swiper-button-disabled,
+.tours-button-next.swiper-button-disabled,
+.tours-button-prev.swiper-button-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }

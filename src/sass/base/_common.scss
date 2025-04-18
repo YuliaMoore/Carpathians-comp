@@ -23,6 +23,30 @@ body {
   }
 }
 
+h2 {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1b1d1b;
+  margin-top: 52px;
+  margin-bottom: 28px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 52px;
+    line-height: 63px;
+    margin-bottom: 40px;
+    margin-top: 80px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 68px;
+    line-height: 83px;
+    margin-bottom: 60px;
+  }
+}
+
 .hidden {
   position: absolute;
   width: 1px;
