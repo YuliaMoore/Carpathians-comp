@@ -16,10 +16,19 @@
       url('../images/advantages/advantages1.jpg'),
       url('../images/advantages/advantages3.jpg');
 
-    background-position: top 140px left, top 223px left 793px,
-      top 222px left 397px;
-    margin-left: 135px;
-    margin-right: 135px;
+    background-position: top 140px left 125px, top 223px left 918px,
+      top 222px left 522px;
+    // margin-left: 135px;
+    // margin-right: 135px;
+  }
+}
+
+.advatages-title {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 120px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 140px;
   }
 }
 .advantages-list {
@@ -29,15 +38,7 @@
     margin-left: 62px;
   }
   @media screen and (min-width: 1440px) {
-    margin-left: 135px;
-  }
-}
-.advatages-title {
-  @media screen and (min-width: 768px) {
-    margin-bottom: 120px;
-  }
-  @media screen and (min-width: 1440px) {
-    margin-bottom: 140px;
+    margin-left: 270px;
   }
 }
 
