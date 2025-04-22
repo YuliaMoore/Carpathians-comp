@@ -33,6 +33,7 @@
     // padding: 60px 99px;
     padding-left: 100px;
     padding-right: 99px;
+    padding-bottom: 60px;
   }
 }
 
@@ -132,7 +133,7 @@ label .modal-tours-check {
   line-height: 20px;
   height: 29px;
   margin-bottom: 26px;
-  color: #202321;
+  color: #rgba(32, 35, 33, 1);
   margin-bottom: 24px;
 }
 
@@ -141,4 +142,9 @@ label .modal-tours-check {
   color: rgba(247, 251, 251, 1);
   height: 69px;
   width: 575px;
+  bottom: 0;
+}
+
+.modal-tours-check {
+  color: red;
 }
