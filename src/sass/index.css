@@ -93,8 +93,7 @@ h2 {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -457,9 +456,18 @@ button {
 @media screen and (min-width: 1440px) {
   .advantages {
     background-image: url("../images/advantages/advantages2.jpg"), url("../images/advantages/advantages1.jpg"), url("../images/advantages/advantages3.jpg");
-    background-position: top 140px left, top 223px left 793px, top 222px left 397px;
-    margin-left: 135px;
-    margin-right: 135px;
+    background-position: top 140px left 125px, top 223px left 918px, top 222px left 522px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advatages-title {
+    margin-bottom: 120px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .advatages-title {
+    margin-bottom: 140px;
   }
 }
 
@@ -473,18 +481,7 @@ button {
 }
 @media screen and (min-width: 1440px) {
   .advantages-list {
-    margin-left: 135px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .advatages-title {
-    margin-bottom: 120px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .advatages-title {
-    margin-bottom: 140px;
+    margin-left: 270px;
   }
 }
 
@@ -1269,6 +1266,7 @@ textarea:valid ~ label {
     top: 100px;
     padding-left: 100px;
     padding-right: 99px;
+    padding-bottom: 60px;
   }
 }
 
@@ -1293,7 +1291,7 @@ textarea:valid ~ label {
 
 .icon-close:hover,
 .icon-close:focus {
-  stroke: blue;
+  stroke: black;
   transition: stroke 250ms;
 }
 
@@ -1310,7 +1308,7 @@ textarea:valid ~ label {
   .modal-title {
     font-size: 60px;
     line-height: 73px;
-    margin-top: 0px;
+    margin-top: 25px;
     margin-bottom: 28px;
   }
 }
@@ -1331,6 +1329,7 @@ textarea:valid ~ label {
     line-height: 29px;
     width: 523px;
     margin-left: 25px;
+    margin-bottom: 32px;
   }
 }
 
@@ -1365,8 +1364,9 @@ label .modal-tours-check {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+  height: 29px;
   margin-bottom: 26px;
-  color: #202321;
+  color: #rgba 32, 35, 33, 1;
   margin-bottom: 24px;
 }
 
@@ -1375,4 +1375,9 @@ label .modal-tours-check {
   color: rgb(247, 251, 251);
   height: 69px;
   width: 575px;
+  bottom: 0;
+}
+
+.modal-tours-check {
+  color: red;
 }/*# sourceMappingURL=index.css.map */
